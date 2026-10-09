@@ -300,7 +300,7 @@ Activate the OS-Ken environment in one VS Code remote terminal:
 ``` bash
 source ~/osken/venv/bin/activate
 cd ~/sdn-dynamic-firewall
-osken-manager --verbose ./controller_test.py
+osken-manager --verbose ./controller/learning_switch.py
 ```
 
 Keep this terminal open while the controller runs.
@@ -331,7 +331,7 @@ functionality.
 To stop the test, type `exit` in Mininet, then press `Ctrl+C` in the
 controller terminal.
 
-If `controller_test.py` is not present in the repository, this test
+If `controller/learning_switch.py` is not present in the repository, this test
 cannot be run until the file is obtained from the development version or
 recreated. Do not treat this temporary test controller as the final
 firewall controller.
@@ -427,7 +427,7 @@ controller when you want to run the tests again.
     Windows Remote - SSH.
 -   [ ] VS Code Remote - SSH connection verified if using that workflow.
 -   [ ] Basic OpenFlow 1.3 learning-switch test completed when
-    `controller_test.py` is available.
+    `controller/learning_switch.py` is available.
 -   [ ] Actual project components and tests tracked separately from the
     environment setup.
 
